@@ -1,0 +1,23 @@
+1. 정적 서비스
+- 
+2. 동적 서비스
+- 
+
+정적 서비스 서버 -> 웹서버(아파치 서버, 엔진엑스 NGINX)
+동적 서비스 서버 -> WAS(Web Aplication Server) or 서블릿 컨테이너
+WAS : 웹서버로부터 오는 동적인 요청을 처리하는 서버
+아파치(정적) + 톰캣(동적) = 아파치 톰캣(정적, 동적 페이지 처리하는 서버)
+
+클라이언트 -> 요청 -> 서버(Controller -> Service -> DAO -> DB)
+
+-------------------- 설치 및 세팅 --------------------
+https://tomcat.apache.org/
+왼쪽 메뉴 Download - Tomcat 10 - Core : zip 클릭
+
+이클립스 - Window - Preferences - Server 탭 열고 - Runtime Environments - Add - Apache 탭 열고 - Apache Tomcat v10.1 선택 후 - next 클릭 - browse 클릭 - 설치한 아파치톰캣 폴더 찾아서 선택 - Finish - 적용
+이클립스 - 하단 Servers 창 클릭 - No servers are available. Click this link to create a new server 클릭 - Apache 탭 열고 - Tomcat v10.1 Server 선택 - server name 에 Servlet Server
+이클립스 - 하단 Servers 창 - 내가 만든 서버 더블 클릭 - 열린 창의 하단 중 Overview는 서버에 관련된 설정, Modules은 사용한 포트번호에 관련된 이력이 기록되는 공간 remove를 통해 지울 수도 있음
+이클립스 - Window - Showview - Other - Package Explorer 검색 후 Open - 이클립스 하단에 열린 Package Explorer 왼쪽 탭으로 옮김
+
+-------------------- 기타 -------------------- 
+xml 파일안에 빨간색 X 표시 없애는 방법 : Window - Preferences - XML (Wild Web Developer) - Download extenal resources like referenced DTD, XSD 체크
