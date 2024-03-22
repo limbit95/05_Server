@@ -10,6 +10,8 @@ WAS : 웹서버로부터 오는 동적인 요청을 처리하는 서버
 
 클라이언트 -> 요청 -> 서버(Controller -> Service -> DAO -> DB)
 
+a 태그는 get 요청 방식 고정임
+
 -------------------- 설치 및 세팅 --------------------
 https://tomcat.apache.org/
 왼쪽 메뉴 Download - Tomcat 10 - Core : zip 클릭
@@ -21,3 +23,8 @@ https://tomcat.apache.org/
 
 -------------------- 기타 -------------------- 
 xml 파일안에 빨간색 X 표시 없애는 방법 : Window - Preferences - XML (Wild Web Developer) - Download extenal resources like referenced DTD, XSD 체크
+Dynamic Web Project 생성 시 - 이름 설정 - Apache Tomcat v10.1, modul 6.0 인지 확인 - next - next - Content root "/" - Generate web.xml deployment descriptor 체크박스 선택 후 - Finish
+이클립스 html, css, xml 파일 만들 때 Encoding 기본값 설정 변경하는 법 - Window - Preferences - 검색창에 각각 html, css, xml 등 검색 후 - ~~.file 이란 탭에 들어가 Encoding 설정을 UTF-8로 설정 변경
+
+-------------------- 공부 -------------------- 
+status code란? (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

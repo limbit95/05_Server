@@ -86,5 +86,35 @@
         <button>회원가입</button>
     </form>
 
+	<hr>
+
+    <h1>커피 주문하기</h1>
+    
+    <form action="/coffee" method="get">
+        주문자 : <input name="orderer" required>
+        <br>
+        
+        커피 : <select name="coffee">
+                <option>아메리카노</option>
+                <option>카페라떼</option>
+                <option>카푸치노</option>
+                <option>콜드브루</option>
+                <option>민트초코칩프라페</option>
+               </select>
+        
+        <br><br>
+
+        ICE <input type="radio" name="type" value="ice">
+        HOT <input type="radio" name="type" value="hot">
+
+        <br><br>
+        옵션 <br>
+        샷 추가 <input type="checkbox" name="opt" value="shot">
+        <br>
+        연하게 <input type="checkbox" name="opt" value="mild">
+
+        <br><br>
+        <button>주문하기</button>
+    </form>
 </body>
 </html>
