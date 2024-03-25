@@ -2,19 +2,23 @@ package edu.kh.controller;
 
 import java.io.IOException;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/scopeCheck")
-public class ScopeCheckController extends HttpServlet{
+@WebServlet("/jstl/main")
+public class JSTLController extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		RequestDispatcher dis = req.getRequestDispatcher("/WEB-INF/views/jstl/main.jsp");
 		
-		req.getRequestDispatcher("/WEB-INF/views/scope/scopeCheck.jsp").forward(req, resp);
+		dis.forward(req, resp);
 		
 	}
+	
 }

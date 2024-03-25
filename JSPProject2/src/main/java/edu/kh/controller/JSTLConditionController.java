@@ -2,19 +2,26 @@ package edu.kh.controller;
 
 import java.io.IOException;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/scopeCheck")
-public class ScopeCheckController extends HttpServlet{
+@WebServlet("/jstl/condition")
+public class JSTLConditionController extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		req.getRequestDispatcher("/WEB-INF/views/scope/scopeCheck.jsp").forward(req, resp);
+		req.setAttribute("name", "홍길동");
+		req.setAttribute("money", 50000);
+		
+		RequestDispatcher dis = req.getRequestDispatcher("/WEB-INF/views/jstl/condition.jsp");
+		
+		dis.forward(req, resp);
 		
 	}
+	
 }
