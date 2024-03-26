@@ -21,6 +21,13 @@ https://tomcat.apache.org/
 이클립스 - 하단 Servers 창 - 내가 만든 서버 더블 클릭 - 열린 창의 하단 중 Overview는 서버에 관련된 설정, Modules은 사용한 포트번호에 관련된 이력이 기록되는 공간 remove를 통해 지울 수도 있음
 이클립스 - Window - Showview - Other - Package Explorer 검색 후 Open - 이클립스 하단에 열린 Package Explorer 왼쪽 탭으로 옮김
 
+JSTL 설치
+구글 드라이브 lib 폴더 안에 JSTL.zip 파일 받고 압출 풀어서 이클립스 해당 프로젝트 안 lib 폴더에 집어 넣기
+
+이클립스에서 lombok 인식시키기
+- lombok.jar 파일 이클립스 실행 폴더에 복사해넣기 - Powershell 실핸하여 방금 복사한 lombok.jar 파일이 있는 경로로 이동하여 java -java .\lombok.jar 입력하기
+- 이클립스 실행 파일 알아서 찾았다면 Install/Update 버튼 누르기 - 파일 못 찾았다면 - Specify location 버튼 누르고 - 이클립스 실행 exe 파일 찾아서 선택하고 Install/Update 버튼 누르기
+
 -------------------- 기타 -------------------- 
 xml 파일안에 빨간색 X 표시 없애는 방법 : Window - Preferences - XML (Wild Web Developer) - Download extenal resources like referenced DTD, XSD 체크
 Dynamic Web Project 생성 시 - 이름 설정 - Apache Tomcat v10.1, modul 6.0 인지 확인 - next - next - Content root "/" - Generate web.xml deployment descriptor 체크박스 선택 후 - Finish
@@ -28,3 +35,28 @@ Dynamic Web Project 생성 시 - 이름 설정 - Apache Tomcat v10.1, modul 6.0 
 
 -------------------- 공부 -------------------- 
 status code란? (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+-------------------- 취업 준비 -------------------- 
+벨로그
+1) 개념 정리
+2) 발생한 오류, 원인, 해결애 대해서
+
+깃허브
+1) 디자인 꾸미기
+2) 다양한 프로젝트 구상 및 커밋
+3) 프로그래머스 문제 풀이
+노션
+원티드 이력서 양식
+피그마
+
+
+장점
+1. 계속 성장하고자 하는 자세(욕심과 끈기, 자아성찰력)
+- 첫 번째 강점은 어떤 조직에 있든 계속 성장하고자 하는 자세로 임한다는 것입니다.
+- 2020년도 매니저 직책으로 버거킹에서 일했을 때 돌발상황에 대한 유연한 대처가 부족했었습니다. 
+원인은 매장 매뉴얼을 확실하게 숙지 못함으로 오는 소극적인 태도로 인함이었고, 
+매장 매뉴얼을 완벽히 숙지하고 나서부터는 어떠한 돌발상황에도 대처를 할 수 있게 되었습니다.
+대처할 수 없는 돌발상황이라고 하여도 매장 매뉴얼을 전부 알고 있다는 확신에 당황하지 않고 해결점을 찾는 과정에서도 여유를 가질 수 있게도 되었습니다.
+
+2. 재차 확인하는 습관(꼼꼼함)
+3. 새로운 것을 받아들이는데 심리적 허들이 낮은 편(수용력)
