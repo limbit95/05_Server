@@ -25,6 +25,86 @@ public class TodoService {
 		
 		return todoList;
 	}
+
+	/** Todo 등록하기 서비스
+	 * @param title
+	 * @param memo
+	 * @param memberNo
+	 * @return result
+	 */
+	public int insert(String title, String memo, int memberNo) throws Exception{
+		Connection conn = getConnection();
+		
+		int result = dao.insert(conn, title, memo, memberNo);
+		
+		if(result > 0) {
+			commit(conn);
+		} else {
+			rollback(conn);
+		}
+		
+		close(conn);
+		
+		return result;
+	}
+
+	/** Todo 삭제 서비스
+	 * @param todoNo
+	 * @return result
+	 */
+	public int delete(String todoNo) throws Exception{
+		Connection conn = getConnection();
+		
+		int result = dao.delete(conn, todoNo);
+		
+		if(result > 0) {
+			commit(conn);
+		} else {
+			rollback(conn);
+		}
+		
+		close(conn);
+		
+		return result;
+	}
+
+	/** Todo 조회 서비스
+	 * @param parameter
+	 * @param memberNo
+	 * @return todo
+	 */
+	public Todo selectOne(String todoNo, int memberNo) throws Exception{
+		Connection conn = getConnection();
+		
+		Todo todo = dao.selectOne(conn, todoNo, memberNo);
+		
+		close(conn);
+		
+		return todo;
+	}
+
+	/** Todo 수정하기 서비스
+	 * @param todoNo
+	 * @param title
+	 * @param memo
+	 * @param memberNo
+	 * @return result
+	 */
+	public int update(String todoNo, String title, String memo, int memberNo) throws Exception{
+		Connection conn = getConnection();
+		
+		int result = dao.update(conn, todoNo, title, memo, memberNo);
+		
+		if(result > 0) {
+			commit(conn);
+		} else {
+			rollback(conn);
+		}
+		
+		close(conn);
+		
+		return result;
+	}
 	
 	
 	
